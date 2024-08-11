@@ -1,0 +1,64 @@
+.user-listing-page {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url("https://media.idownloadblog.com/wp-content/uploads/2020/07/iPhone-gradient-wallpaper-idownloadblog-V1ByArthur1992aS.png");
+    background-size: cover;
+}
+
+.user-heading {
+    font-size: 32px;
+    margin-top: 15px;
+}
+
+.user-icon-number {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+}
+  
+.icon {
+    height: 40px;
+    width: 40px;
+    align-self: center;
+}
+  
+.count {
+    font-size: 38px;
+}
+
+.kpi p {
+    margin-top: 0;
+}
+  
+.active-user-h1 {
+    margin-bottom: 3px;
+}
+
+@media screen and (min-width : 768px) {
+    .home-navbar-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .user-listing-page {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding-left: 50pt;
+        padding-right: 50pt;
+        background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/840/806/small/dark-pink-blurred-template-vector.jpg");
+        background-size: cover;
+    }
+    .card-container {
+        width: 80%;
+    }
+    .user-icon-number {
+        width: 20%;
+    }
+}

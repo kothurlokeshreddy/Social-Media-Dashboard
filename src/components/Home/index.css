@@ -1,0 +1,142 @@
+.home-page {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://media.idownloadblog.com/wp-content/uploads/2020/07/iPhone-gradient-wallpaper-idownloadblog-V1ByArthur1992aS.png");
+  background-size: cover;
+  color: #ffffff;
+}
+
+.dashboard-heading {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+.kpi-containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kpi {
+  height: 80px;
+  width: 90vw;
+  background: linear-gradient(to right, #0fa4af, #afdde5);
+  padding-left: 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.kpi-heading {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.kpi p {
+  margin-top: 0;
+}
+
+.active-user-h1 {
+  margin-bottom: 5px;
+}
+
+.icon-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20%;
+  height: 30px;
+  margin-top: 8px;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  align-self: center;
+}
+
+.count {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.greeting {
+  font-size: 22px;
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+.graph-containers {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+@media screen and (min-width : 768px) and (max-width : 770px) {
+  .home-page {
+    height: 100%;
+  }
+  .kpi-containers {
+    width: 80vw;
+    height: 180px;
+    flex-wrap: wrap;
+  }
+  .kpi {
+    width: 205px;
+  }
+  .icon-number {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width : 770px) {
+  .home-page {
+    height: 100vh;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/840/806/small/dark-pink-blurred-template-vector.jpg");
+    background-size: cover;
+  }
+
+  .home-navbar-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .kpi-containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:80vw;
+    height: 100px;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+  .kpi-heading {
+    font-size: 18px;
+  }
+  .kpi {
+    width: 250px;
+  }
+  .icon-number {
+    width: 25%;
+  }
+  .icon {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+  }
+  .greeting {
+    margin-left: 30px;
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .graph-containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+    padding: 20px;
+  }
+}

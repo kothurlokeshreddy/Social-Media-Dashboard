@@ -1,0 +1,25 @@
+.bar-chart {
+    width: 600px;
+    text-align: center;
+    height: 400px;
+    background-color: transparent;
+    border: 1px solid #a2d9d9;
+    box-shadow: 0px 2px 4px 0px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.bar-chart h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width : 768px) {
+    .bar-chart {
+        width: 90vw;
+        align-self: center;
+        height: 380px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}

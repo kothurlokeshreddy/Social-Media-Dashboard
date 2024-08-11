@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Social Media Admin Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a Social Media Admin Dashboard built using React.js and Recharts. It includes various components for managing users and posts, visualizing data through charts, and providing key performance indicators (KPIs) for user activities.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Posts Per Day Bar Chart**: Visualizes the number of posts created per day using a bar chart.
+- **User Activity Pie Chart**: Displays the percentage of active vs inactive users with a pie chart.
+- **User Listing Page**: Provides a table of users with options to edit or ban users, along with KPIs for total users and users active in the last 24 hours.
+- **Post Listing Page**: Provides a table of posts with options to delete or hide posts, along with KPIs for total posts and posts published in the last 24 hours.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run this project locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Download the Project Files**:
+   - Download the project as a zip file from Google Drive.
+   - Extract the zip file to your preferred location.
 
-### `npm test`
+2. **Open the Project in Visual Studio Code**:
+   - Open Visual Studio Code.
+   - Select `File` > `Open Folder` and navigate to the extracted project folder.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Install Dependencies**:
+   - Open a terminal in Visual Studio Code.
+   - Run the following command to install all necessary dependencies:
+     ```bash
+     npm install
+     ```
 
-### `npm run build`
+4. **Start the Project**:
+   - Once the dependencies are installed, start the project by running:
+     ```bash
+     npm start
+     ```
+   - The project will start, and you can view the dashboard in your default web browser at `http://localhost:3000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Dataset
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- The dataset used in this project is a dummy dataset provided in the `posts.js` and `users.js` files.
+- `posts.js` contains an array of post objects with fields like `created_at`.
+- `users.js` contains an array of user objects with fields like `isActive` and `lastLogin`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+The project is structured as follows:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **src/**: Contains the source code for the project.
+  - **components/**: Contains all the React components used in the project.
+    - **Header/**: The navigation header component.
+    - **PostsPerDayBarChart/**: Displays the bar chart for posts per day.
+    - **UserActivityPieChart/**: Displays the pie chart for user activity.
+    - **UserListing/**: Displays the user listing table with pagination and KPIs.
+  - **data/**: Contains the dummy datasets (`posts.js` and `users.js`).
+  - **App.js**: The main app component that integrates all the components.
+  - **index.js**: The entry point of the React application.
+  - **index.css**: Contains the global styling for the project.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project uses the following main dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React.js**: A JavaScript library for building user interfaces.
+- **Recharts**: A charting library built on React for data visualization.
+- **Moment.js**: A library for parsing, validating, and manipulating dates.
+- **Material-UI**: A popular React UI framework for building responsive web apps.
 
-## Learn More
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For any inquiries or feedback, please reach out to the project maintainer at [kothurlokeshreddy@example.com].
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
